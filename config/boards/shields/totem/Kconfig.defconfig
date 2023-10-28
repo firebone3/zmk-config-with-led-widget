@@ -12,6 +12,33 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_USB
     default y
 
+config LED
+    default y
+
+config RGBLED_WIDGET_BATTERY_BLINK_MS
+    int "Duration of battery level blink in ms"
+    default 2000
+
+config RGBLED_WIDGET_OUTPUT_BLINK_MS
+    int "Duration of BLE connection status blink in ms"
+    default 1000
+
+config RGBLED_WIDGET_INTERVAL_MS
+    int "Minimum wait duration between two blinks in ms"
+    default 500
+
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    int "High battery level percentage"
+    default 80
+
+config RGBLED_WIDGET_BATTERY_LEVEL_LOW
+    int "Low battery level percentage"
+    default 20
+
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    int "Critical battery level percentage"
+    default 5
+
 endif
 
 if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT || SHIELD_TOTEM_DONGLE
@@ -21,5 +48,32 @@ config ZMK_SPLIT
 
 config ZMK_BLE
     default y
+
+config LED
+    default y
+
+config RGBLED_WIDGET_BATTERY_BLINK_MS
+    int "Duration of battery level blink in ms"
+    default 2000
+
+config RGBLED_WIDGET_OUTPUT_BLINK_MS
+    int "Duration of BLE connection status blink in ms"
+    default 1000
+
+config RGBLED_WIDGET_INTERVAL_MS
+    int "Minimum wait duration between two blinks in ms"
+    default 500
+
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    int "High battery level percentage"
+    default 80
+
+config RGBLED_WIDGET_BATTERY_LEVEL_LOW
+    int "Low battery level percentage"
+    default 20
+
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    int "Critical battery level percentage"
+    default 5
 
 endif
