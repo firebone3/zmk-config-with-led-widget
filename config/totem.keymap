@@ -57,6 +57,11 @@
                 COMBO(dce, &kp LS(E), 02 12)
                 COMBO(dcr, &kp LS(R), 03 13)
                 COMBO(dct, &kp LS(T), 04 14)
+                COMBO(dcy, &kp LS(Y), 05 15)
+                COMBO(dcu, &kp LS(U), 06 16)
+                COMBO(dci, &kp LS(I), 07 17)
+                COMBO(dco, &kp LS(O), 08 18)
+                COMBO(dcp, &kp LS(P), 09 19)
     };
 
         behaviors {
